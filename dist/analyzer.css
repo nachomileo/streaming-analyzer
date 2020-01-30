@@ -170,18 +170,18 @@
 .analyzer-overlay-branding-title {
   position: absolute;
   font-family: LevelOne, "Lucida Grande", Helvetica, Arial;
-  font-size: 48pt;
+  font-size: 20pt;
   color: white;
   padding: 12px 24px;
-  left: 350px;
-  top: 15px;
+  left: 104px;
+  top: 26px;
 }
 
 .analyzer-overlay-branding-logo {
   position: absolute;
-  background: url('eyevinnlogo.png') no-repeat;
+  background: url('lsdlogo.png') no-repeat;
   background-size: 100% 100%;
-  width: 300px;
+  width: 80px;
   height: 80px;
   left: 25px;
   top: 15px;

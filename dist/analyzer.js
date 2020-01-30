@@ -87819,8 +87819,8 @@ var Analyzer = function () {
       var overlayLegend = document.createElement('div');
       overlayLegend.className = 'analyzer-overlay-legend';
       var htmlLegend = '';
-      htmlLegend += '<p>Developed by <a href="http://www.eyevinntechnology.se">Eyevinn Technology</a> and built on <a href="https://github.com/video-dev/hls.js">hls.js</a> and slightly modified <a href="https://shaka-player-demo.appspot.com">Shaka Player</a>. Report issues <a href="https://github.com/Eyevinn/streaming-analyzer/issues">here</a>. ';
-      htmlLegend += 'Click on window to hide Analyzer</p>';
+      htmlLegend += '<p>Forked from <a href="https://github.com/Eyevinn/streaming-analyzer">this repo</a>. ';
+      htmlLegend += '</p><h6>Click on window to hide Analyzer</h6>';
       overlayLegend.innerHTML = htmlLegend;
 
       overlayElement.appendChild(overlayLegend);
@@ -87969,7 +87969,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var EXAMPLE_ASSETS = [{ name: 'Jan Ozer at STSWE17 (HLS, long)', uri: 'https://maitv-vod.lab.eyevinn.technology/stswe17-ozer.mp4/master.m3u8' }, { name: 'VINN showreel (HLS, short)', uri: 'https://maitv-vod.lab.eyevinn.technology/VINN.mp4/master.m3u8' }, { name: 'Eyevinn Channel Engine (HLS, live)', uri: 'https://ott-channel-engine.herokuapp.com/live/master.m3u8' }, { name: 'Angel One (MPEG-DASH)', uri: 'https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd' }, { name: 'Sintel 4k (MPEG-DASH)', uri: 'https://storage.googleapis.com/shaka-demo-assets/sintel-mp4-only/dash.mpd' }, { name: 'Test Picture (MPEG-DASH, live)', uri: 'https://vm2.dashif.org/livesim/mup_30/testpic_2s/Manifest.mpd' }, { name: 'ARD (MPEG-DASH, live)', uri: 'https://irtdashreference-i.akamaihd.net/dash/live/901161/bfs/manifestARD.mpd' }];
+var EXAMPLE_ASSETS = [{ name: 'TecTV', uri: 'https://strive-sdn-lsdlive-live.akamaized.net/live_passthrough_static/tectv/playlist.m3u8' }, { name: 'Eyevinn Channel Engine (HLS, live)', uri: 'https://ott-channel-engine.herokuapp.com/live/master.m3u8' }, { name: 'Test Picture (MPEG-DASH, live)', uri: 'https://vm2.dashif.org/livesim/mup_30/testpic_2s/Manifest.mpd' }];
 
 var InputDlg = function () {
   function InputDlg() {
@@ -87988,7 +87988,7 @@ var InputDlg = function () {
       formElement.className = 'analyzer-input-form';
       var inputElement = document.createElement('input');
       inputElement.className = 'analyzer-input-form-uri';
-      inputElement.setAttribute('placeholder', 'Enter URI to video stream or choose from one of the example assets below');
+      inputElement.setAttribute('placeholder', 'Enter stream or choose from one of listed below');
       inputElement.id = 'uri';
 
       var exampleElement = document.createElement('select');
